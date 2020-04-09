@@ -3,8 +3,8 @@
 <url> <loc>https://github.com/d3rwan/d3rwan-blog/d3rwan-blog/tags</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://github.com/d3rwan/d3rwan-blog/d3rwan-blog/categories</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://github.com/d3rwan/d3rwan-blog/d3rwan-blog/languages</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://github.com/d3rwan/d3rwan-blog/d3rwan-blog/posts/elk-from-scratch</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://github.com/d3rwan/d3rwan-blog/d3rwan-blog/posts/elk-depuis-zero</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://github.com/d3rwan/d3rwan-blog/d3rwan-blog/posts/elk-from-scratch</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://github.com/d3rwan/d3rwan-blog/d3rwan-blog/posts/kong</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://github.com/d3rwan/d3rwan-blog/d3rwan-blog/posts/yarn</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://github.com/d3rwan/d3rwan-blog/d3rwan-blog/posts/devoxx-2018</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>

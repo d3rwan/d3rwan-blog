@@ -12,7 +12,7 @@ tags:
   - "ELK"
   - "Elasticsearch"
   - "Kibana"
-socialImage: "/d3rwan-blog/media/elk/logo.jpeg"
+socialImage: "/media/elk/response.png"
 ---
 
 Ou comment déployer une architecture de monitoring en quelques minutes.
@@ -43,7 +43,7 @@ Nous ajouterons également :
 
 * **B **comme *Beats*, sondes à installer côté client afin d’envoyer les logs/métriques à notre stack
 
-![Stack de monitoring](/media/elk/stack-elk.jpeg)*Notre stack de monitoring*
+![Stack de monitoring](/d3rwan-blog/media/elk/stack-elk.jpeg)*Notre stack de monitoring*
 
 ## ***Déploiement.***
 
@@ -85,7 +85,7 @@ Une fois les différents composants démarrés, vous devriez pouvoir accéder à
 Puis nous allons lancer un example d’application web (site HTML statique exposé par Nginx, ainsi qu’une sonde FileBeat permettant l’envoi des logs vers notre stack ELK)
 
     # build image
-    docker build /media/elk/webapp -t dockerelkstack_webapp
+    docker build ./webapp -t dockerelkstack_webapp
 
     # run (daemon)
     docker run --network dockerelkstack_logging --link redis:redis -p 80:80 -d --name webapp dockerelkstack_webapp
@@ -95,16 +95,16 @@ Puis nous allons lancer un example d’application web (site HTML statique expos
 
 Une fois notre composant démarré, vous devriez pouvoir accéder à l’application web (port 80).
 
-![Exemple d’application web](/media/elk/joliadmin.png)*Exemple d’application web (source: [https://github.com/sbilly/joli-admin](https://github.com/sbilly/joli-admin))*
+![Exemple d’application web](/d3rwan-blog/media/elk/joliadmin.png)*Exemple d’application web (source: [https://github.com/sbilly/joli-admin](https://github.com/sbilly/joli-admin))*
 
 Après avoir navigué quelques minutes, en retournant sur l’IHM de Kibana, un index *logstash *est à présent disponible.
 
-![Configuration pattern d'index](/media/elk/configure-pattern.png)*Kibana : écran de configuration d’un pattern d’index (ici, l’index logstash est détecté)*
+![Configuration pattern d'index](/d3rwan-blog/media/elk/configure-pattern.png)*Kibana : écran de configuration d’un pattern d’index (ici, l’index logstash est détecté)*
 
 Après avoir crée notre pattern d’index, nous pouvons à présent naviguer dans les logs de notre application web (onglet *Discover*), créer des visualisations (onglet *Visualize*) et des tableaux de bord (onglet *Dashboard*)
 
-![Kibana: données brutes](/media/elk/response.png)*Kibana: Visualisation brute des logs de notre application web*
+![Kibana: données brutes](/d3rwan-blog/media/elk/response.png)*Kibana: Visualisation brute des logs de notre application web*
 
-![Kibana: tableau de bord analytique](/media/elk/analytics.png)*Kibana: Tableau de bord analytique*
+![Kibana: tableau de bord analytique](/d3rwan-blog/media/elk/analytics.png)*Kibana: Tableau de bord analytique*
 
 And… voilà! Nous avons donc mis en place, en quelques minutes seulement, une stack de supervision opérationnelle.

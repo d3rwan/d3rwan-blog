@@ -12,7 +12,7 @@ tags:
   - "ELK"
   - "Elasticsearch"
   - "Kibana"
-socialImage: "/d3rwan-blog/media/elk/logo.jpeg"
+socialImage: "/media/elk/response.png"
 ---
 
 Or how to deploy a complete monitoring architecture in few minutes.
@@ -43,7 +43,7 @@ But also :
 
 * **B **as *Beats*, client-side agent to send the logs/metrics to our stack
 
-![The complete architecture](/media/elk/stack-elk.jpeg)*The complete architecture*
+![The complete architecture](/d3rwan-blog/media/elk/stack-elk.jpeg)*The complete architecture*
 
 ## Deploy.
 
@@ -95,16 +95,16 @@ Then, we will deploy a basic example web app (NGinx serving HTML + Filebeat agen
 
 After startup, you should be able to access the web app (port 80).
 
-![Example web app capture (source: [https://github.com/sbilly/joli-admin](https://github.com/sbilly/joli-admin))](/media/elk/joliadmin.png)*Example web app capture (source: [https://github.com/sbilly/joli-admin](https://github.com/sbilly/joli-admin))*
+![Example web app capture (source: [https://github.com/sbilly/joli-admin](https://github.com/sbilly/joli-admin))](/d3rwan-blog/media/elk/joliadmin.png)*Example web app capture (source: [https://github.com/sbilly/joli-admin](https://github.com/sbilly/joli-admin))*
 
 After few minutes browsing, returning to Kibana. An index (*logstash-**) is now available.
 
-![Kibana: Index pattern configuration screen (here, logstash-* index is available)](/media/elk/configure-pattern.png)*Kibana: Index pattern configuration screen (here, logstash-* index is available)*
+![Kibana: Index pattern configuration screen (here, logstash-* index is available)](/d3rwan-blog/media/elk/configure-pattern.png)*Kibana: Index pattern configuration screen (here, logstash-* index is available)*
 
 After creating index, we can now exploring our web app logs (Discover tab), create visualizations (Visualize tab) and dashboards (Dashboard tab).
 
-![Kibana: Exploring the raw logs](/media/elk/response.png)*Kibana: Exploring the raw logs*
+![Kibana: Exploring the raw logs](/d3rwan-blog/media/elk/response.png)*Kibana: Exploring the raw logs*
 
-![Kibana: Analytic dashboard](/media/elk/analytics.png)*Kibana: Analytic dashboard*
+![Kibana: Analytic dashboard](/d3rwan-blog/media/elk/analytics.png)*Kibana: Analytic dashboard*
 
 And… voilà! In just few minutes, we set up, an operational monitoring stack.

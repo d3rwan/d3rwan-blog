@@ -34,7 +34,7 @@ module.exports = {
       telegram: '',
       twitter: 'd3rwan',
       github: 'd3rwan',
-      rss: '',
+      rss: 'rss.xml',
       vkontakte: '',
       linkedin: 'erwan-deruelle-b806b3a5',
       instagram: '',
@@ -43,7 +43,7 @@ module.exports = {
       weibo: '',
       codepen: '',
       youtube: '',
-      soundcloud: '',
+      soundcloud: ''
     }
   }
 };

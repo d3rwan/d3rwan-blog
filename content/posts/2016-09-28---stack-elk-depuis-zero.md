@@ -12,7 +12,7 @@ tags:
   - "ELK"
   - "Elasticsearch"
   - "Kibana"
-socialImage: "/media/elk/logo.jpeg"
+socialImage: "/d3rwan-blog/media/elk/logo.jpeg"
 ---
 
 Ou comment déployer une architecture de monitoring en quelques minutes.

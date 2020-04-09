@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  url: 'https://github.com/d3rwan/d3rwan-blog',
+  url: 'https://d3rwan.github.io/d3rwan-blog',
   pathPrefix: '/d3rwan-blog',
   title: 'Blog - Erwan Deruelle',
   subtitle: 'Full-stack developer - IT Architect',

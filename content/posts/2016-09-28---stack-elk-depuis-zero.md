@@ -12,6 +12,10 @@ tags:
   - "ELK"
   - "Elasticsearch"
   - "Kibana"
+  - "Logstash"
+  - "Redis"
+  - "Docker"
+  - "Architecture"
 socialImage: "/media/elk/response.png"
 ---
 

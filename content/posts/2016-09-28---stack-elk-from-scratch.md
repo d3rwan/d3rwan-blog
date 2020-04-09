@@ -1,6 +1,6 @@
 ---
 title: An ELK stack from scratch, with Docker
-date: "2016-09-28T12:00:00.000Z"
+date: "2016-09-28T14:00:00.000Z"
 description: Or how to deploy a complete monitoring architecture in few minutes
 template: "post"
 draft: false
@@ -12,6 +12,10 @@ tags:
   - "ELK"
   - "Elasticsearch"
   - "Kibana"
+  - "Logstash"
+  - "Redis"
+  - "Docker"
+  - "Architecture"
 socialImage: "/media/elk/response.png"
 ---
 

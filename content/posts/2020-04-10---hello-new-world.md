@@ -9,13 +9,13 @@ category: "Dev"
 language: 🇫🇷
 tags:
   - "Blogging"
-socialImage: "/media/tech-blog.png"
+socialImage: "/media/tech-blog.jpg"
 ---
 
 ## Préambule
 
 Quel jour on est déjà ? Ah, #ConfinementJour25 selon Twitter. 
-Depuis quelques jours j'ai resenti l'envie de refaire des articles de blog. 
+Depuis quelques jours j'ai ressenti l'envie de refaire des articles de blog. 
 
 Lors de mes derniers articles, j'avais choisi d'utiliser la plateforme [Medium](https://medium.com), qui permettait à l'époque facilement de publier du contenu au travers d'une IHM minimaliste, tout en offrant une belle visibilité. 
 Depuis, la plateforme a évoluée, et est devenue assez désagréable à utiliser _en tant que lecteur_. Affichage permanent du paywall, obligation de se connecter, _exode_ d'une partie de la communauté tech...   
@@ -53,7 +53,7 @@ Le plus simple est cependant de se baser sur le starter officiel [gatsby-starter
 
 Là encore, la [documentation officielle](https://www.gatsbyjs.org/docs/how-gatsby-works-with-github-pages/#deploying-to-a-path-on-github-pages) est bien faite et explique le fonctionnement pas à pas.
 
-En 2 mots, dans mon cas, depuis mon repository github, en allant dans le menu `Settings`, dans la section `GitHub Pages`, je choisi la branche dans laquelle est versionnée la version générée du blog
+En 2 mots, dans mon cas, depuis mon repository Github, en allant dans le menu `Settings`, dans la section `GitHub Pages`, je choisi la branche dans laquelle est versionnée la version générée du blog
  
 ![](/d3rwan-blog/media/hello-new-world/gh-pages.png)*Configuration de Github Pages*
 

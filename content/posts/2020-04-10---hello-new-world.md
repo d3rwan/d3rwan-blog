@@ -55,7 +55,7 @@ Là encore, la [documentation officielle](https://www.gatsbyjs.org/docs/how-gats
 
 En 2 mots, dans mon cas, depuis mon repository github, en allant dans le menu `Settings`, dans la section `GitHub Pages`, je choisi la branche dans laquelle est versionnée la version générée du blog
  
-![](/media/hello-new-world/gh-pages.png)*Configuration de Github Pages*
+![](/d3rwan-blog/media/hello-new-world/gh-pages.png)*Configuration de Github Pages*
 
 A noter que la branche `gh-pages` est la branche par défaut lors de l'utilisation du plugin [gh-pages](https://www.npmjs.com/package/gh-pages)
 
@@ -66,13 +66,13 @@ Une fois son compte crée, il suffit de configurer son alimentation par un flux 
 
 Pour cela, se rendre dans le menu `Settings > Publishing from RSS`, puis y renseigner l'url du flux RSS généré par son blog personnel (par défaut, un blog Gatsby aura généré un fichier `rss.xml` à la racine)
 
-![](/media/hello-new-world/rss-dev.png)*Configuration de l'alimentation par flux RSS*
+![](/d3rwan-blog/media/hello-new-world/rss-dev.png)*Configuration de l'alimentation par flux RSS*
 
 A partir de là, tous les articles de votre blog vont être importés dans [dev.to](https://dev.to), et seront visible depuis le menu `dashboard`. 
 Par défaut, les articles sont importés en mode `draft`, ce qui vous laissera le soin de valider la bonne importation, et éventuellement corriger les éventuelles différences. 
 Par exemple, dans le cas d'import d'un tweet ou d'un gist, il existe [une syntaxe particulière](https://dev.to/p/editor_guide) qu'il faudra adapter pour un rendu optimal.
 
-![](/media/hello-new-world/frontmatter.png)*Edition d'un post depuis [dev.to](https://dev.to)*
+![](/d3rwan-blog/media/hello-new-world/frontmatter.png)*Edition d'un post depuis [dev.to](https://dev.to)*
 
 Dernier point important, verifier que le champ `canonical_url` dans la configuration de votre post se réfère bien au post original sur votre blog. 
 

@@ -1,0 +1,808 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/d3rwan-blog/styles.1685a65f5c5eaed5bc13.css">html{font-size:100}body{margin:0 0 0 calc(100vw - 100%);color:#222;line-height:1.625;font-size:1rem;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}body,h1,h2,h3,h4,h5,h6{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif}h1,h2,h3,h4,h5,h6{font-weight:600}h1{font-size:2.5rem;line-height:3.25rem;margin-top:6.5rem;margin-bottom:1.625rem}h2{font-size:1.6875rem;line-height:2.4375rem}h2,h3{margin-top:3.25rem;margin-bottom:.8125rem}h3{font-size:1.375rem;line-height:1.625rem}h4{font-size:1.2rem;margin-top:2.4375rem}h4,h5{line-height:1.625rem;margin-bottom:.8125rem}h5,h6{font-size:1rem;margin-top:4.0625rem}h6{line-height:1.625rem;margin-bottom:.8125rem}img{border:0;max-width:100%;margin:inherit auto}img,img+em{display:block}img+em{text-align:center;margin-top:.2rem;font-style:italic;font-weight:600;font-size:.875rem}hr{border:0;color:#222;display:block;height:1.625rem;margin:3.25rem auto;background-size:100% 26px;background-image:linear-gradient(180deg,transparent 1px,transparent 11px,#222 0,#222 15px,transparent 0,transparent 26px);width:6.25rem}a{color:#5d93ff;text-decoration:none}a:active,a:focus,a:hover{color:#f7a046}b,strong{font-weight:600}ul{list-style:square;margin-bottom:1.625rem}ul li{padding:0 .3125rem;margin-bottom:.625rem}p{line-height:1.625rem;margin-bottom:1.625rem}blockquote{padding:0;font-style:italic;text-align:center}figure{display:block;width:100%;height:auto}figcaption{line-height:1.21875rem;margin-top:.40625rem;color:#222;font-size:.875rem;font-style:italic;margin-bottom:0;text-align:center}.anchor{margin-left:-1.875rem!important;padding-right:.875rem!important}@media screen and (min-width:685px){figure.float-left,figure.float-right{max-width:19.375rem;padding:0 1.625rem}.float-right{float:right}.float-left{float:left}}code[class*=language-],pre[class*=language-]{color:#657b83;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::-moz-selection,code[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection{background:#073642}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{background:#073642}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto;border-radius:.3em}:not(pre)>code[class*=language-],pre[class*=language-]{background-color:#fdf6e3}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#93a1a1}.token.punctuation{color:#586e75}.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#268bd2}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string,.token.url{color:#2aa198}.token.entity{color:#657b83;background:#eee8d5}.token.atrule,.token.attr-value,.token.keyword{color:#859900}.token.class-name,.token.function{color:#b58900}.token.important,.token.regex,.token.variable{color:#cb4b16}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.Author-module--author__photo--36xCH{display:inline-block;margin-bottom:0;border-radius:50%;background-clip:padding-box}.Author-module--author__title--2CaTb{font-size:1.125rem;font-weight:600;line-height:1.82813rem;margin:.8125rem 0}.Author-module--author__title-link--Yrism,.Author-module--author__title-link--Yrism:focus,.Author-module--author__title-link--Yrism:hover{color:#222}.Author-module--author__subtitle--cAaEB{color:#888;line-height:1.625rem;margin-bottom:1.625rem}.Icon-module--icon--Gpyvw{display:inline-block;width:1em;height:1em;stroke-width:0;stroke:currentColor;fill:currentColor;font-style:normal;font-weight:400;speak:none;margin-right:.2em;text-align:center;font-variant:normal;text-transform:none;line-height:1em;margin-left:.2em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.Contacts-module--contacts--1rGd1{margin-bottom:1.625rem}.Contacts-module--contacts__list--3OgdW{display:flex;flex-flow:row wrap;flex-grow:0;flex-shrink:0;list-style:none;padding:0;margin:.625rem -.1875rem;width:8.75rem}.Contacts-module--contacts__list-item--16p9q{padding:0;margin:.25rem;display:flex;align-content:center;align-items:center;justify-content:center;height:2.1875rem;width:2.1875rem;line-height:2.1875rem;border-radius:50%;text-align:center;border:1px solid #ebebeb}.Contacts-module--contacts__list-item-link--2MIDn{border:0;display:flex;color:#222}.Contacts-module--contacts__list-item-link--2MIDn:focus,.Contacts-module--contacts__list-item-link--2MIDn:hover{color:#5d93ff}.Copyright-module--copyright--1ariN{color:#b6b6b6;font-size:.875rem}.Menu-module--menu--Efbin{margin-bottom:1.625rem}.Menu-module--menu__list--31Zeo{list-style:none;padding:0;margin:0}.Menu-module--menu__list-item--1lJ6B{padding:0;margin:.625rem 0}.Menu-module--menu__list-item-link--10Ush{font-size:1rem;color:#222;font-weight:400;border:0}.Menu-module--menu__list-item-link--10Ush:focus,.Menu-module--menu__list-item-link--10Ush:hover{color:#5d93ff;border-bottom:1px solid #5d93ff}.Menu-module--menu__list-item-link--active--2CbUO{color:#222;border-bottom:1px solid #222}.Sidebar-module--sidebar--X4z2p{width:100%}.Sidebar-module--sidebar__inner--Jdc5s{position:relative;padding:1.5625rem 1.25rem 0}@media screen and (min-width:685px){.Sidebar-module--sidebar--X4z2p{width:calc(41.625% - 1.09375rem)}.Sidebar-module--sidebar--X4z2p:nth-child(1n){float:left;margin-right:1.875rem;clear:none}.Sidebar-module--sidebar--X4z2p:last-child{margin-right:0}.Sidebar-module--sidebar--X4z2p:nth-child(12n){margin-right:0;float:right}.Sidebar-module--sidebar--X4z2p:nth-child(12n+1){clear:both}.Sidebar-module--sidebar__inner--Jdc5s{padding:1.875rem 1.25rem 0}.Sidebar-module--sidebar__inner--Jdc5s:after{background:#e6e6e6;background:-webkit-gradient(linear,left top,left bottom,from(#e6e6e6),color-stop(48%,#e6e6e6),to(#fff));background:linear-gradient(180deg,#e6e6e6 0,#e6e6e6 48%,#fff);position:absolute;content:"";width:.0625rem;height:33.75rem;top:30px;right:-10px;bottom:0}}@media screen and (min-width:960px){.Sidebar-module--sidebar--X4z2p{width:calc(33.3% - 1.25rem)}.Sidebar-module--sidebar--X4z2p:nth-child(1n){float:left;margin-right:1.875rem;clear:none}.Sidebar-module--sidebar--X4z2p:last-child{margin-right:0}.Sidebar-module--sidebar--X4z2p:nth-child(3n){margin-right:0;float:right}.Sidebar-module--sidebar--X4z2p:nth-child(3n+1){clear:both}.Sidebar-module--sidebar__inner--Jdc5s{padding:2.5rem}}.Layout-module--layout--3Pyz6{max-width:66.875rem;margin-left:auto;margin-right:auto}.Layout-module--layout--3Pyz6:before{content:"";display:table}.Layout-module--layout--3Pyz6:after{content:"";display:table;clear:both}.Feed-module--feed__item--2D5rE{margin-bottom:2.03125rem}.Feed-module--feed__item--2D5rE:last-child{margin-bottom:.8125rem}.Feed-module--feed__item-title--3nigr{font-size:1.6875rem;line-height:2.4375rem;margin-top:0;margin-bottom:.8125rem}.Feed-module--feed__item-title-link--iFMRs{color:#222}.Feed-module--feed__item-title-link--iFMRs:focus,.Feed-module--feed__item-title-link--iFMRs:hover{color:#222;border-bottom:1px solid #222}.Feed-module--feed__item-description--1uO8e{font-size:1rem;line-height:1.625rem;margin-bottom:1.21875rem}.Feed-module--feed__item-meta-time--3t1fg{font-size:.875rem;color:#222;font-weight:600;text-transform:uppercase}.Feed-module--feed__item-meta-reading--2RlxZ{color:#5e5e5e;font-weight:200;font-size:small;float:right}.Feed-module--feed__item-meta-divider--N-Q0A{margin:0 .3125rem}.Feed-module--feed__item-meta-category-link--23f8F{font-size:.875rem;color:#f7a046;font-weight:600;text-transform:uppercase}.Feed-module--feed__item-meta-category-link--23f8F:focus,.Feed-module--feed__item-meta-category-link--23f8F:hover{color:#5d93ff}.Feed-module--feed__item-readmore--1u6bI{font-size:1rem;color:#5d93ff}.Feed-module--feed__item-readmore--1u6bI:focus,.Feed-module--feed__item-readmore--1u6bI:hover{color:#5d93ff;border-bottom:1px solid #5d93ff}.Page-module--page--2nMky{margin-bottom:3.25rem}.Page-module--page__inner--2M_vz{padding:1.5625rem 1.25rem}.Page-module--page__title--GPD8L{font-size:2.5rem;font-weight:600;line-height:3.25rem;margin-top:0;margin-bottom:2.35625rem}.Page-module--page__body--Ic6i6{font-size:1rem;line-height:1.625rem;margin:0 0 1.625rem}.Page-module--page--2nMky .Page-module--back-button--2qnR3{display:block;max-width:5.625rem;height:2.1875rem;padding:0 1.5rem;line-height:2.1875rem;text-align:center;color:#222;border:1px solid #e6e6e6;border-radius:1.25rem;font-size:1rem;font-weight:400;margin-bottom:1.625rem}@media screen and (min-width:685px){.Page-module--page--2nMky{width:calc(58.275% - .78125rem)}.Page-module--page--2nMky:nth-child(1n){float:left;margin-right:1.875rem;clear:none}.Page-module--page--2nMky:last-child{margin-right:0}.Page-module--page--2nMky:nth-child(12n){margin-right:0;float:right}.Page-module--page--2nMky:nth-child(12n+1){clear:both}.Page-module--page__inner--2M_vz{padding:1.875rem 1.25rem}}@media screen and (min-width:960px){.Page-module--page--2nMky{width:calc(66.6% - .625rem)}.Page-module--page--2nMky:nth-child(1n){float:left;margin-right:1.875rem;clear:none}.Page-module--page--2nMky:last-child{margin-right:0}.Page-module--page--2nMky:nth-child(3n){margin-right:0;float:right}.Page-module--page--2nMky:nth-child(3n+1){clear:both}.Page-module--page__inner--2M_vz{padding:2.5rem 2.1875rem}}.Pagination-module--pagination--2H3nO{margin-top:3.25rem;display:flex}.Pagination-module--pagination__prev--bet5s{width:50%;text-align:left}.Pagination-module--pagination__prev-link--1Nzs6{color:#f7a046;font-size:1.625rem;font-weight:700}.Pagination-module--pagination__prev-link--1Nzs6:focus,.Pagination-module--pagination__prev-link--1Nzs6:hover{color:#5d93ff}.Pagination-module--pagination__prev-link--disable--Yklx9{pointer-events:none;color:#bbb}.Pagination-module--pagination__next--3hFiN{width:50%;text-align:right}.Pagination-module--pagination__next-link--3FUtA{color:#f7a046;font-size:1.625rem;font-weight:700}.Pagination-module--pagination__next-link--3FUtA:focus,.Pagination-module--pagination__next-link--3FUtA:hover{color:#5d93ff}.Pagination-module--pagination__next-link--disable--30UwZ{pointer-events:none;color:#bbb}.Author-module--author--2Yefr{border-top:1px solid #e6e6e6;max-width:40rem;padding-top:1.25rem;line-height:1.625rem;margin-top:1.625rem;margin-bottom:3.25rem}.Author-module--author__bio-twitter--n-O9n{display:block;text-decoration:underline}@media screen and (min-width:685px){.Author-module--author--2Yefr{margin-left:auto;margin-right:auto}}.Content-module--content--3p512{max-width:59.0625rem;padding:0 .9375rem;margin:0 auto}.Content-module--content__title--2BDW9{font-size:2rem;max-width:40rem;font-weight:600;text-align:center;line-height:2.68125rem;margin:1.625rem auto 0}.Content-module--content__body--2TrQ- figure{margin-bottom:1.625rem}.Content-module--content__body--2TrQ- figure blockquote{font-style:italic;text-align:center;margin-top:0;padding:1.625rem 0}.Content-module--content__body--2TrQ- figure blockquote p{max-width:40rem;font-size:1.6817rem;margin-top:0;margin-bottom:1.625rem;line-height:2.4375rem}.Content-module--content__body--2TrQ- a{text-decoration:underline}.Content-module--content__body--2TrQ- *{max-width:40rem;margin-left:auto;margin-right:auto}.Content-module--content__body--2TrQ- img{max-width:100%}@media screen and (min-width:960px){.Content-module--content--3p512{padding:0}.Content-module--content__title--2BDW9{font-size:3rem;line-height:3.65625rem;margin-top:3.65625rem;margin-bottom:2.4375rem}.Content-module--content__body--2TrQ-,.Content-module--content__body--2TrQ- p{font-size:1.125rem;line-height:1.82813rem;margin-bottom:1.82813rem}}.Meta-module--meta__date--29eD7{font-style:italic;text-align:right}.Tags-module--tags--1L_ct{margin-bottom:.8125rem}.Tags-module--tags__list--91FqN{list-style:none;margin:0 -.625rem;padding:0}.Tags-module--tags__list-item--1M30P{display:inline-block;margin:.625rem .3125rem}.Tags-module--tags__list-item-link--3SL_8{display:inline-block;height:2.1875rem;padding:0 1.5rem;line-height:2.1875rem;border:1px solid #e6e6e6;text-decoration:none;border-radius:1.25rem;color:#222}.Tags-module--tags__list-item-link--3SL_8:focus,.Tags-module--tags__list-item-link--3SL_8:hover{color:#5d93ff}.Post-module--post__comments--25y6I,.Post-module--post__footer--3WzWU{max-width:40rem;margin:0 auto;padding:0 .9375rem}.Post-module--post__home-button--16Kl0{display:block;max-width:5.625rem;height:2.1875rem;padding:0 1.5rem;line-height:2.1875rem;text-align:center;color:#222;border:1px solid #e6e6e6;border-radius:1.25rem;font-size:1rem;font-weight:400;margin-left:auto;margin-right:auto;margin-top:1.625rem}.Post-module--post__home-button--16Kl0:focus,.Post-module--post__home-button--16Kl0:hover{color:#5d93ff}@media screen and (min-width:960px){.Post-module--post__comments--25y6I,.Post-module--post__footer--3WzWU{padding:0}.Post-module--post__home-button--16Kl0{position:fixed;max-width:auto;margin:0;top:30px;left:30px}}</style><meta name="generator" content="Gatsby 2.20.12"/><link rel="alternate" type="application/rss+xml" title="Blog - Erwan Deruelle" href="/d3rwan-blog/rss.xml"/><link rel="stylesheet" href="https://github.githubassets.com/assets/gist-embed-b3b573358bfc66d89e1e95dbf8319c09.css"/><style type="text/css">
+    .anchor.before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+      padding-right: 4px;
+    }
+    .anchor.after {
+      display: inline-block;
+      padding-left: 4px;
+    }
+    h1 .anchor svg,
+    h2 .anchor svg,
+    h3 .anchor svg,
+    h4 .anchor svg,
+    h5 .anchor svg,
+    h6 .anchor svg {
+      visibility: hidden;
+    }
+    h1:hover .anchor svg,
+    h2:hover .anchor svg,
+    h3:hover .anchor svg,
+    h4:hover .anchor svg,
+    h5:hover .anchor svg,
+    h6:hover .anchor svg,
+    h1 .anchor:focus svg,
+    h2 .anchor:focus svg,
+    h3 .anchor:focus svg,
+    h4 .anchor:focus svg,
+    h5 .anchor:focus svg,
+    h6 .anchor:focus svg {
+      visibility: visible;
+    }
+  </style><script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var hash = window.decodeURI(location.hash.replace('#', ''))
+      if (hash !== '') {
+        var element = document.getElementById(hash)
+        if (element) {
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+          var clientTop = document.documentElement.clientTop || document.body.clientTop || 0
+          var offset = element.getBoundingClientRect().top + scrollTop - clientTop
+          // Wait for the browser to finish rendering before scrolling.
+          setTimeout((function() {
+            window.scrollTo(0, offset - 0)
+          }), 0)
+        }
+      }
+    })
+  </script><link rel="preconnect dns-prefetch" href="https://www.google-analytics.com"/><script async="" src="https://www.googletagmanager.com/gtag/js?id="></script><script>
+      
+      
+      if(true) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){window.dataLayer && window.dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', '', {"send_page_view":false});
+      }
+      </script><link rel="sitemap" type="application/xml" href="/d3rwan-blog/sitemap.xml"/><link rel="icon" href="/d3rwan-blog/icons/icon-48x48.png?v=5a95576050eb0ca6c486e2048b8195a5"/><link rel="manifest" href="/d3rwan-blog/manifest.webmanifest"/><meta name="theme-color" content="#F7A046"/><link rel="apple-touch-icon" sizes="48x48" href="/d3rwan-blog/icons/icon-48x48.png?v=5a95576050eb0ca6c486e2048b8195a5"/><link rel="apple-touch-icon" sizes="72x72" href="/d3rwan-blog/icons/icon-72x72.png?v=5a95576050eb0ca6c486e2048b8195a5"/><link rel="apple-touch-icon" sizes="96x96" href="/d3rwan-blog/icons/icon-96x96.png?v=5a95576050eb0ca6c486e2048b8195a5"/><link rel="apple-touch-icon" sizes="144x144" href="/d3rwan-blog/icons/icon-144x144.png?v=5a95576050eb0ca6c486e2048b8195a5"/><link rel="apple-touch-icon" sizes="192x192" href="/d3rwan-blog/icons/icon-192x192.png?v=5a95576050eb0ca6c486e2048b8195a5"/><link rel="apple-touch-icon" sizes="256x256" href="/d3rwan-blog/icons/icon-256x256.png?v=5a95576050eb0ca6c486e2048b8195a5"/><link rel="apple-touch-icon" sizes="384x384" href="/d3rwan-blog/icons/icon-384x384.png?v=5a95576050eb0ca6c486e2048b8195a5"/><link rel="apple-touch-icon" sizes="512x512" href="/d3rwan-blog/icons/icon-512x512.png?v=5a95576050eb0ca6c486e2048b8195a5"/><title data-react-helmet="true">A la découverte de Vector - Blog - Erwan Deruelle</title><meta data-react-helmet="true" name="description" content="Vector est un router de données d&#x27;observabilité haute-performance, open-source et écrit en Rust. Un Logstash killer ?"/><meta data-react-helmet="true" property="og:site_name" content="A la découverte de Vector - Blog - Erwan Deruelle"/><meta data-react-helmet="true" property="og:image" content="https://d3rwan.github.io/d3rwan-blog/media/vector/vector.png"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:title" content="A la découverte de Vector - Blog - Erwan Deruelle"/><meta data-react-helmet="true" name="twitter:description" content="Vector est un router de données d&#x27;observabilité haute-performance, open-source et écrit en Rust. Un Logstash killer ?"/><meta data-react-helmet="true" name="twitter:image" content="https://d3rwan.github.io/d3rwan-blog/media/vector/vector.png"/><link as="script" rel="preload" href="/d3rwan-blog/webpack-runtime-583886ecf6c850bd7d0a.js"/><link as="script" rel="preload" href="/d3rwan-blog/framework-88c48abae272a3bc68e7.js"/><link as="script" rel="preload" href="/d3rwan-blog/app-6a7feee794e305ff970e.js"/><link as="script" rel="preload" href="/d3rwan-blog/styles-083a06cb5740baaf347d.js"/><link as="script" rel="preload" href="/d3rwan-blog/02829756d7c9841fdd33d32bcc7843fcf4b76a8f-7ee17d93bf5fb2a6c1b6.js"/><link as="script" rel="preload" href="/d3rwan-blog/06a1f2c941cd55aef4842384529632245d8720e1-87f6c214daddf9a7b43d.js"/><link as="script" rel="preload" href="/d3rwan-blog/component---src-templates-post-template-js-6279ae0603857b831b13.js"/><link as="fetch" rel="preload" href="/d3rwan-blog/page-data/posts/decouverte-vector/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/d3rwan-blog/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="Layout-module--layout--3Pyz6"><div><a class="Post-module--post__home-button--16Kl0" href="/d3rwan-blog/">&lt; Home</a><div><div class="Content-module--content--3p512"><h1 class="Content-module--content__title--2BDW9">A la découverte de Vector</h1><div class="Content-module--content__body--2TrQ-"><h2 id="tldr" style="position:relative;"><a href="#tldr" aria-label="tldr permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>TL/DR</h2>
+<p>En 2 briques, <code class="language-text">Logstash</code> ? ETL ! <code class="language-text">Rust</code> ? <a href="https://vector.dev/" target="_blank" rel="nofollow noopener noreferrer">Vector</a> !
+On peut effectivement décrire Vector comme un Logstash qu’on aurait réécrit en Rust, avec tous les avantages inhérents au langage (performance, binaire natif), mais les défauts d’une solution encore très jeune (nombre de modules limités, peu de références).
+On notera que la documentation semble plutôt bien faite, et que les composants natifs permettent de gérer beaucoup de use-case simple de monitoring.
+Et comme on peut convenir que Logstash n’est pas le meilleur produit du monde, espérons que Vector trouve sa place dans les prochains mois dans la communauté.
+Et en plus, ca tombe bien, Vector propose nativement des modules équivalents à ceux de Logstash, ce qui fait que la migration ne sera pas compliquée !     </p>
+<h2 id="après-tout-on-a-le-temps-non--confinement" style="position:relative;"><a href="#apr%C3%A8s-tout-on-a-le-temps-non--confinement" aria-label="après tout on a le temps non  confinement permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Après-tout, on a le temps non ? #Confinement</h2>
+<p><a href="https://vector.dev/" target="_blank" rel="nofollow noopener noreferrer">Vector</a> se défini comme un routeur de données d’observabilité haute-performance, qui permet la collecte, la transformation et l’envoi d’évênements (logs et/ou métriques).</p>
+<h3 id="fonctionnement-conceptuel" style="position:relative;"><a href="#fonctionnement-conceptuel" aria-label="fonctionnement conceptuel permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Fonctionnement conceptuel</h3>
+<p><img src="/d3rwan-blog/media/vector/concept.png"></p>
+<p>Il s’agit basiquement d’un ETL qui s’appuie sur les notions suivantes:</p>
+<ul>
+<li><strong>Source</strong> (aka. E / Extract)</li>
+</ul>
+<p>Récupération des données brutes depuis l’endroit où elles sont produites.
+Par exemple, on pourra <a href="https://vector.dev/docs/reference/sources/file/" target="_blank" rel="nofollow noopener noreferrer">lire les logs dans un fichier</a>, <a href="https://vector.dev/docs/reference/sources/kafka/" target="_blank" rel="nofollow noopener noreferrer">écouter une file Kafka</a> ou <a href="https://vector.dev/docs/reference/sources/statsd/" target="_blank" rel="nofollow noopener noreferrer">récupérer des métriques de StatsD</a></p>
+<ul>
+<li><strong>Transform</strong> (aka. T / Transform)</li>
+</ul>
+<p>Transformation des données brutes, ou du flux complet de données,
+Par exemple, on pourra <a href="https://vector.dev/docs/reference/transforms/filter/" target="_blank" rel="nofollow noopener noreferrer">filtrer des entrées</a> ou encore <a href="https://vector.dev/docs/reference/transforms/regex_parser/" target="_blank" rel="nofollow noopener noreferrer">parser un log selon une expression régulière</a> </p>
+<ul>
+<li><strong>Sink</strong> (aka. L / Load)</li>
+</ul>
+<p>Destination des données lues et transformées. Chaque module enverra les données de manière unitaire ou sous la forme d’un stream en fonction du service cible.
+Par exemple, on pourra <a href="https://vector.dev/docs/reference/sinks/aws_s3/" target="_blank" rel="nofollow noopener noreferrer">sauvegarder les données brutes sous Amazon S3</a>, les <a href="https://vector.dev/docs/reference/sinks/elasticsearch/" target="_blank" rel="nofollow noopener noreferrer">indexer dans un cluster Elasticsearch</a> ou les <a href="https://vector.dev/docs/reference/sinks/prometheus/" target="_blank" rel="nofollow noopener noreferrer">exposer à Prometheus</a></p>
+<h3 id="fonctionnalités" style="position:relative;"><a href="#fonctionnalit%C3%A9s" aria-label="fonctionnalités permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Fonctionnalités</h3>
+<h4 id="rapide" style="position:relative;"><a href="#rapide" aria-label="rapide permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Rapide</h4>
+<p>Ecrit en Rust, Vector est très rapide avec une gestion efficiente de la mémoire.
+Le tout sans runtime, ni garbage collector.</p>
+<h4 id="un-outil-unique-de-la-source-à-la-destination" style="position:relative;"><a href="#un-outil-unique-de-la-source-%C3%A0-la-destination" aria-label="un outil unique de la source à la destination permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Un outil unique, de la source à la destination</h4>
+<p>Vector propose plusieurs stratégies de déploiement afin de pouvoir être utilisé par tous, quelque-soit le contexte. </p>
+<ul>
+<li><a href="https://vector.dev/docs/setup/deployment/strategies/#daemon" target="_blank" rel="nofollow noopener noreferrer">Déploiement en tant que Démon</a></li>
+</ul>
+<p>Ici, on lancera une instance de Vector en tâche de fond pour collecter <em>toutes</em> les données du serveur hôte
+<img src="/d3rwan-blog/media/vector/strategy_daemon.png"></p>
+<ul>
+<li><a href="https://vector.dev/docs/setup/deployment/strategies/#sidecar" target="_blank" rel="nofollow noopener noreferrer">Déploiement en tant que Sidecar</a></li>
+</ul>
+<p>Dans cette stratégie, on lancera une instance de Vector par service à monitorer.
+<img src="/d3rwan-blog/media/vector/strategy_sidecar.png"></p>
+<ul>
+<li><a href="https://vector.dev/docs/setup/deployment/strategies/#service" target="_blank" rel="nofollow noopener noreferrer">Déploiement en tant que Service</a></li>
+</ul>
+<p>Ici, Vector est lancé en tant qu’un service dédié.
+<img src="/d3rwan-blog/media/vector/strategy_service.png"></p>
+<p>En utilisant et/ou combinant ces stratégies, on peut donc définir des topologies d’architecture de collecte de données</p>
+<ul>
+<li><a href="https://vector.dev/docs/setup/deployment/topologies/#distributed" target="_blank" rel="nofollow noopener noreferrer">Collecte distribuée</a></li>
+</ul>
+<p>Dans cette topologie, chaque instance de Vector va directement envoyer les données au(x) service(s) cibles.
+Il s’agit du cas le plus simple, et qui permet de <em>scaler</em> facilement.
+Néanmoins, il peut induire des pertes de performance locales ou de données.</p>
+<p><img src="/d3rwan-blog/media/vector/topology_distributed.png"></p>
+<ul>
+<li><a href="https://vector.dev/docs/setup/deployment/topologies/#centralized" target="_blank" rel="nofollow noopener noreferrer">Collecte Centralisée</a></li>
+</ul>
+<p>Ici, chaque instance de Vector va envoyer les données à une instance centrale, chargée d’effectuer les opérations les plus coûteuses.
+De fait, moins d’impact sur les performances locales des applicatifs, mais un service centrale en tant que <a href="https://fr.wikipedia.org/wiki/Point_de_d%C3%A9faillance_unique" target="_blank" rel="nofollow noopener noreferrer">SPOF</a><br>
+<img src="/d3rwan-blog/media/vector/topology_centralized.png"></p>
+<ul>
+<li><a href="https://vector.dev/docs/setup/deployment/topologies/#stream-based" target="_blank" rel="nofollow noopener noreferrer">Collecte Streamée</a></li>
+</ul>
+<p>Variante de la topologie précédente, dans laquelle on va rajouter un broker en amont du service centrale afin de supprimer le SPOF.<br>
+Cette topologie est la plus scalable et durable, mais aussi la plus complexe à mettre en place.  </p>
+<p><img src="/d3rwan-blog/media/vector/topology_stream.png"></p>
+<h4 id="simplicité-de-déploiement" style="position:relative;"><a href="#simplicit%C3%A9-de-d%C3%A9ploiement" aria-label="simplicité de déploiement permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Simplicité de déploiement</h4>
+<p>Concu en Rust, Vector se présente donc sous la forme d’un binaire cross-compilé pour l’os cible, et ne nécessite pas de runtime type JVM</p>
+<h2 id="bon-ok-mais-ca-marche-au-moins-" style="position:relative;"><a href="#bon-ok-mais-ca-marche-au-moins-" aria-label="bon ok mais ca marche au moins  permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Bon, OK, mais ca marche au moins ?</h2>
+<p>Pour tester Vector, je vais m’inspirer d’un post précédent : <a href="https://d3rwan.github.io/d3rwan-blog/posts/elk-depuis-zero" target="_blank" rel="nofollow noopener noreferrer">Une stack ELK from scratch avec Docker</a></p>
+<p><img src="/d3rwan-blog/media/vector/archi.png"><em>Architecture de notre POC</em> </p>
+<p>Dans le cas présent, je vais m’appuyer sur :</p>
+<ul>
+<li>Elasticsearch, comme moteur d’indexation, de recherche &#x26; d’analytics,</li>
+<li>Kibana, comme IHM de visualisation et de génération de tableaux de bord interactifs</li>
+<li>Vector, en tant que service central, pour transformer les données et les envoyer vers Elasticsearch,</li>
+<li>Kafka, en tant que broker en amont de ma stack de monitoring</li>
+<li>Vector, en tant qu’agent, pour récupérer les données sources et les envoyer vers Kafka</li>
+</ul>
+<blockquote>
+<p>On se positionne donc dans la topologie de <a href="https://vector.dev/docs/setup/deployment/topologies/#stream-based" target="_blank" rel="nofollow noopener noreferrer">Collecte Streamée</a> décrite ci-avant</p>
+</blockquote>
+<p>L’ensemble des services et des interactions sont décrites dans un fichier docker-compose.yml:</p>
+<p><div id="gist102398526" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-docker-compose-yml" class="file">
+    
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-yaml ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8" data-paste-markdown-skip>
+      <tr>
+        <td id="file-docker-compose-yml-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-docker-compose-yml-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-ent">version</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>3.7<span class="pl-pds">&quot;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-docker-compose-yml-LC2" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-docker-compose-yml-LC3" class="blob-code blob-code-inner js-file-line"><span class="pl-ent">services</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-docker-compose-yml-LC4" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-docker-compose-yml-LC5" class="blob-code blob-code-inner js-file-line">  <span class="pl-ent">zookeeper</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-docker-compose-yml-LC6" class="blob-code blob-code-inner js-file-line">    <span class="pl-ent">image</span>: <span class="pl-s">confluentinc/cp-zookeeper:5.4.0</span></td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-docker-compose-yml-LC7" class="blob-code blob-code-inner js-file-line">    <span class="pl-ent">hostname</span>: <span class="pl-s">zookeeper</span></td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-docker-compose-yml-LC8" class="blob-code blob-code-inner js-file-line">    <span class="pl-ent">container_name</span>: <span class="pl-s">zookeeper</span></td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-docker-compose-yml-LC9" class="blob-code blob-code-inner js-file-line">    <span class="pl-ent">ports</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-docker-compose-yml-LC10" class="blob-code blob-code-inner js-file-line">      - <span class="pl-s"><span class="pl-pds">&quot;</span>2181:2181<span class="pl-pds">&quot;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-docker-compose-yml-LC11" class="blob-code blob-code-inner js-file-line">    <span class="pl-ent">environment</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="file-docker-compose-yml-LC12" class="blob-code blob-code-inner js-file-line">      <span class="pl-ent">ZOOKEEPER_CLIENT_PORT</span>: <span class="pl-c1">2181</span></td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="file-docker-compose-yml-LC13" class="blob-code blob-code-inner js-file-line">      <span class="pl-ent">ZOOKEEPER_TICK_TIME</span>: <span class="pl-c1">2000</span></td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="file-docker-compose-yml-LC14" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="file-docker-compose-yml-LC15" class="blob-code blob-code-inner js-file-line">  <span class="pl-ent">kafka</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="file-docker-compose-yml-LC16" class="blob-code blob-code-inner js-file-line">    <span class="pl-ent">image</span>: <span class="pl-s">confluentinc/cp-enterprise-kafka:5.4.0</span></td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L17" class="blob-num js-line-number" data-line-number="17"></td>
+        <td id="file-docker-compose-yml-LC17" class="blob-code blob-code-inner js-file-line">    <span class="pl-ent">hostname</span>: <span class="pl-s">kafka</span></td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L18" class="blob-num js-line-number" data-line-number="18"></td>
+        <td id="file-docker-compose-yml-LC18" class="blob-code blob-code-inner js-file-line">    <span class="pl-ent">container_name</span>: <span class="pl-s">kafka</span></td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L19" class="blob-num js-line-number" data-line-number="19"></td>
+        <td id="file-docker-compose-yml-LC19" class="blob-code blob-code-inner js-file-line">    <span class="pl-ent">depends_on</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L20" class="blob-num js-line-number" data-line-number="20"></td>
+        <td id="file-docker-compose-yml-LC20" class="blob-code blob-code-inner js-file-line">      - <span class="pl-s">zookeeper</span></td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L21" class="blob-num js-line-number" data-line-number="21"></td>
+        <td id="file-docker-compose-yml-LC21" class="blob-code blob-code-inner js-file-line">    <span class="pl-ent">ports</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L22" class="blob-num js-line-number" data-line-number="22"></td>
+        <td id="file-docker-compose-yml-LC22" class="blob-code blob-code-inner js-file-line">      - <span class="pl-s"><span class="pl-pds">&quot;</span>29092:29092<span class="pl-pds">&quot;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L23" class="blob-num js-line-number" data-line-number="23"></td>
+        <td id="file-docker-compose-yml-LC23" class="blob-code blob-code-inner js-file-line">      - <span class="pl-s"><span class="pl-pds">&quot;</span>9092:9092<span class="pl-pds">&quot;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L24" class="blob-num js-line-number" data-line-number="24"></td>
+        <td id="file-docker-compose-yml-LC24" class="blob-code blob-code-inner js-file-line">    <span class="pl-ent">environment</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L25" class="blob-num js-line-number" data-line-number="25"></td>
+        <td id="file-docker-compose-yml-LC25" class="blob-code blob-code-inner js-file-line">      <span class="pl-ent">KAFKA_BROKER_ID</span>: <span class="pl-c1">1</span></td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L26" class="blob-num js-line-number" data-line-number="26"></td>
+        <td id="file-docker-compose-yml-LC26" class="blob-code blob-code-inner js-file-line">      <span class="pl-ent">KAFKA_ZOOKEEPER_CONNECT</span>: <span class="pl-s"><span class="pl-pds">&#39;</span>zookeeper:2181<span class="pl-pds">&#39;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L27" class="blob-num js-line-number" data-line-number="27"></td>
+        <td id="file-docker-compose-yml-LC27" class="blob-code blob-code-inner js-file-line">      <span class="pl-ent">KAFKA_LISTENER_SECURITY_PROTOCOL_MAP</span>: <span class="pl-s">PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT</span></td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L28" class="blob-num js-line-number" data-line-number="28"></td>
+        <td id="file-docker-compose-yml-LC28" class="blob-code blob-code-inner js-file-line">      <span class="pl-ent">KAFKA_ADVERTISED_LISTENERS</span>: <span class="pl-s">PLAINTEXT://kafka:29092,PLAINTEXT_HOST://localhost:9092</span></td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L29" class="blob-num js-line-number" data-line-number="29"></td>
+        <td id="file-docker-compose-yml-LC29" class="blob-code blob-code-inner js-file-line">      <span class="pl-ent">KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR</span>: <span class="pl-c1">1</span></td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L30" class="blob-num js-line-number" data-line-number="30"></td>
+        <td id="file-docker-compose-yml-LC30" class="blob-code blob-code-inner js-file-line">      <span class="pl-ent">KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS</span>: <span class="pl-c1">0</span></td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L31" class="blob-num js-line-number" data-line-number="31"></td>
+        <td id="file-docker-compose-yml-LC31" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L32" class="blob-num js-line-number" data-line-number="32"></td>
+        <td id="file-docker-compose-yml-LC32" class="blob-code blob-code-inner js-file-line">  <span class="pl-ent">elasticsearch</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L33" class="blob-num js-line-number" data-line-number="33"></td>
+        <td id="file-docker-compose-yml-LC33" class="blob-code blob-code-inner js-file-line">    <span class="pl-ent">image</span>: <span class="pl-s">docker.elastic.co/elasticsearch/elasticsearch:7.6.2</span></td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L34" class="blob-num js-line-number" data-line-number="34"></td>
+        <td id="file-docker-compose-yml-LC34" class="blob-code blob-code-inner js-file-line">    <span class="pl-ent">container_name</span>: <span class="pl-s">elastic</span></td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L35" class="blob-num js-line-number" data-line-number="35"></td>
+        <td id="file-docker-compose-yml-LC35" class="blob-code blob-code-inner js-file-line">    <span class="pl-ent">environment</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L36" class="blob-num js-line-number" data-line-number="36"></td>
+        <td id="file-docker-compose-yml-LC36" class="blob-code blob-code-inner js-file-line">      - <span class="pl-s">ES_JAVA_OPTS=-Xms1g -Xmx1g</span></td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L37" class="blob-num js-line-number" data-line-number="37"></td>
+        <td id="file-docker-compose-yml-LC37" class="blob-code blob-code-inner js-file-line">      - <span class="pl-s">discovery.type=single-node</span></td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L38" class="blob-num js-line-number" data-line-number="38"></td>
+        <td id="file-docker-compose-yml-LC38" class="blob-code blob-code-inner js-file-line">      - <span class="pl-s">network.host=_site_, _local_</span></td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L39" class="blob-num js-line-number" data-line-number="39"></td>
+        <td id="file-docker-compose-yml-LC39" class="blob-code blob-code-inner js-file-line">    <span class="pl-ent">ulimits</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L40" class="blob-num js-line-number" data-line-number="40"></td>
+        <td id="file-docker-compose-yml-LC40" class="blob-code blob-code-inner js-file-line">      <span class="pl-ent">memlock</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L41" class="blob-num js-line-number" data-line-number="41"></td>
+        <td id="file-docker-compose-yml-LC41" class="blob-code blob-code-inner js-file-line">        <span class="pl-ent">soft</span>: <span class="pl-c1">-1</span></td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L42" class="blob-num js-line-number" data-line-number="42"></td>
+        <td id="file-docker-compose-yml-LC42" class="blob-code blob-code-inner js-file-line">        <span class="pl-ent">hard</span>: <span class="pl-c1">-1</span></td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L43" class="blob-num js-line-number" data-line-number="43"></td>
+        <td id="file-docker-compose-yml-LC43" class="blob-code blob-code-inner js-file-line">    <span class="pl-ent">ports</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L44" class="blob-num js-line-number" data-line-number="44"></td>
+        <td id="file-docker-compose-yml-LC44" class="blob-code blob-code-inner js-file-line">      - <span class="pl-c1">9200:9200</span></td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L45" class="blob-num js-line-number" data-line-number="45"></td>
+        <td id="file-docker-compose-yml-LC45" class="blob-code blob-code-inner js-file-line">      - <span class="pl-c1">9300:9300</span></td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L46" class="blob-num js-line-number" data-line-number="46"></td>
+        <td id="file-docker-compose-yml-LC46" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L47" class="blob-num js-line-number" data-line-number="47"></td>
+        <td id="file-docker-compose-yml-LC47" class="blob-code blob-code-inner js-file-line">  <span class="pl-ent">vector</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L48" class="blob-num js-line-number" data-line-number="48"></td>
+        <td id="file-docker-compose-yml-LC48" class="blob-code blob-code-inner js-file-line">    <span class="pl-ent">image</span>: <span class="pl-s">timberio/vector:0.8.0-alpine</span></td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L49" class="blob-num js-line-number" data-line-number="49"></td>
+        <td id="file-docker-compose-yml-LC49" class="blob-code blob-code-inner js-file-line">    <span class="pl-ent">container_name</span>: <span class="pl-s">vector</span></td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L50" class="blob-num js-line-number" data-line-number="50"></td>
+        <td id="file-docker-compose-yml-LC50" class="blob-code blob-code-inner js-file-line">    <span class="pl-ent">ports</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L51" class="blob-num js-line-number" data-line-number="51"></td>
+        <td id="file-docker-compose-yml-LC51" class="blob-code blob-code-inner js-file-line">      - <span class="pl-c1">8888:8888</span></td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L52" class="blob-num js-line-number" data-line-number="52"></td>
+        <td id="file-docker-compose-yml-LC52" class="blob-code blob-code-inner js-file-line">    <span class="pl-ent">volumes</span>: </td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L53" class="blob-num js-line-number" data-line-number="53"></td>
+        <td id="file-docker-compose-yml-LC53" class="blob-code blob-code-inner js-file-line">      - <span class="pl-s">$PWD/vector.toml:/etc/vector/vector.toml:ro</span></td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L54" class="blob-num js-line-number" data-line-number="54"></td>
+        <td id="file-docker-compose-yml-LC54" class="blob-code blob-code-inner js-file-line">    <span class="pl-ent">depends_on</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L55" class="blob-num js-line-number" data-line-number="55"></td>
+        <td id="file-docker-compose-yml-LC55" class="blob-code blob-code-inner js-file-line">      - <span class="pl-s">kafka</span></td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L56" class="blob-num js-line-number" data-line-number="56"></td>
+        <td id="file-docker-compose-yml-LC56" class="blob-code blob-code-inner js-file-line">      - <span class="pl-s">elasticsearch</span></td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L57" class="blob-num js-line-number" data-line-number="57"></td>
+        <td id="file-docker-compose-yml-LC57" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L58" class="blob-num js-line-number" data-line-number="58"></td>
+        <td id="file-docker-compose-yml-LC58" class="blob-code blob-code-inner js-file-line">  <span class="pl-ent">kibana</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L59" class="blob-num js-line-number" data-line-number="59"></td>
+        <td id="file-docker-compose-yml-LC59" class="blob-code blob-code-inner js-file-line">    <span class="pl-ent">image</span>: <span class="pl-s">docker.elastic.co/kibana/kibana:7.6.2</span></td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L60" class="blob-num js-line-number" data-line-number="60"></td>
+        <td id="file-docker-compose-yml-LC60" class="blob-code blob-code-inner js-file-line">    <span class="pl-ent">container_name</span>: <span class="pl-s">kibana</span></td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L61" class="blob-num js-line-number" data-line-number="61"></td>
+        <td id="file-docker-compose-yml-LC61" class="blob-code blob-code-inner js-file-line">    <span class="pl-ent">ports</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L62" class="blob-num js-line-number" data-line-number="62"></td>
+        <td id="file-docker-compose-yml-LC62" class="blob-code blob-code-inner js-file-line">      - <span class="pl-c1">5601:5601</span></td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L63" class="blob-num js-line-number" data-line-number="63"></td>
+        <td id="file-docker-compose-yml-LC63" class="blob-code blob-code-inner js-file-line">    <span class="pl-ent">depends_on</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L64" class="blob-num js-line-number" data-line-number="64"></td>
+        <td id="file-docker-compose-yml-LC64" class="blob-code blob-code-inner js-file-line">      - <span class="pl-s">elasticsearch</span></td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L65" class="blob-num js-line-number" data-line-number="65"></td>
+        <td id="file-docker-compose-yml-LC65" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L66" class="blob-num js-line-number" data-line-number="66"></td>
+        <td id="file-docker-compose-yml-LC66" class="blob-code blob-code-inner js-file-line">  <span class="pl-ent">webapp</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L67" class="blob-num js-line-number" data-line-number="67"></td>
+        <td id="file-docker-compose-yml-LC67" class="blob-code blob-code-inner js-file-line">    <span class="pl-ent">build</span>: <span class="pl-s">./webapp/</span></td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L68" class="blob-num js-line-number" data-line-number="68"></td>
+        <td id="file-docker-compose-yml-LC68" class="blob-code blob-code-inner js-file-line">    <span class="pl-ent">container_name</span>: <span class="pl-s">webapp</span></td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L69" class="blob-num js-line-number" data-line-number="69"></td>
+        <td id="file-docker-compose-yml-LC69" class="blob-code blob-code-inner js-file-line">    <span class="pl-ent">ports</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L70" class="blob-num js-line-number" data-line-number="70"></td>
+        <td id="file-docker-compose-yml-LC70" class="blob-code blob-code-inner js-file-line">      - <span class="pl-c1">80:80</span></td>
+      </tr>
+      <tr>
+        <td id="file-docker-compose-yml-L71" class="blob-num js-line-number" data-line-number="71"></td>
+        <td id="file-docker-compose-yml-LC71" class="blob-code blob-code-inner js-file-line">      - <span class="pl-c1">9999:9999</span></td>
+      </tr>
+</table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/d3rwan/13aba18e159c340b2947992bfbb45f81/raw/c994e66bcae65ee522cd1c8db7db04e51a6b8635/docker-compose.yml" style="float:right">view raw</a>
+        <a href="https://gist.github.com/d3rwan/13aba18e159c340b2947992bfbb45f81#file-docker-compose-yml">docker-compose.yml</a>
+        hosted with &#10084; by <a href="https://github.com">GitHub</a>
+      </div>
+    </div>
+</div></p>
+<p>Le service central Vector est configuré comme suit:</p>
+<ul>
+<li>Lecture des évênements depuis le broker Kafka</li>
+<li>Parsing du JSON de l’évênement envoyé depuis l’agent Vector</li>
+<li>Parsing Grok (format Logstash) de la ligne de log brute</li>
+<li>Indexation vers Elasticsearch</li>
+</ul>
+<p><div id="gist102398526" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-vector-toml" class="file">
+    
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-toml ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8" data-paste-markdown-skip>
+      <tr>
+        <td id="file-vector-toml-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-vector-toml-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span> Set global options</span></td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-vector-toml-LC2" class="blob-code blob-code-inner js-file-line"><span class="pl-smi">data_dir</span> = <span class="pl-s"><span class="pl-pds">&quot;</span>/var/lib/vector<span class="pl-pds">&quot;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-vector-toml-LC3" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-vector-toml-LC4" class="blob-code blob-code-inner js-file-line">[<span class="pl-en">sources</span>.<span class="pl-en">from_broker</span>]</td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-vector-toml-LC5" class="blob-code blob-code-inner js-file-line">  <span class="pl-smi">type</span> = <span class="pl-s"><span class="pl-pds">&quot;</span>kafka<span class="pl-pds">&quot;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-vector-toml-LC6" class="blob-code blob-code-inner js-file-line">  <span class="pl-smi">bootstrap_servers</span> = <span class="pl-s"><span class="pl-pds">&quot;</span>kafka:29092<span class="pl-pds">&quot;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-vector-toml-LC7" class="blob-code blob-code-inner js-file-line">  <span class="pl-smi">group_id</span> = <span class="pl-s"><span class="pl-pds">&quot;</span>vector-consumer<span class="pl-pds">&quot;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-vector-toml-LC8" class="blob-code blob-code-inner js-file-line">  <span class="pl-smi">topics</span> = [<span class="pl-s"><span class="pl-pds">&quot;</span>events<span class="pl-pds">&quot;</span></span>]</td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-vector-toml-LC9" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-vector-toml-LC10" class="blob-code blob-code-inner js-file-line">[<span class="pl-en">transforms</span>.<span class="pl-en">json_parser</span>]</td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-vector-toml-LC11" class="blob-code blob-code-inner js-file-line">  <span class="pl-smi">type</span>   = <span class="pl-s"><span class="pl-pds">&quot;</span>json_parser<span class="pl-pds">&quot;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="file-vector-toml-LC12" class="blob-code blob-code-inner js-file-line">  <span class="pl-smi">inputs</span> = [<span class="pl-s"><span class="pl-pds">&quot;</span>from_broker<span class="pl-pds">&quot;</span></span>]</td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="file-vector-toml-LC13" class="blob-code blob-code-inner js-file-line">  <span class="pl-smi">drop_field</span> = <span class="pl-c1">true</span></td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="file-vector-toml-LC14" class="blob-code blob-code-inner js-file-line">  <span class="pl-smi">field</span> = <span class="pl-s"><span class="pl-pds">&quot;</span>message<span class="pl-pds">&quot;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="file-vector-toml-LC15" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="file-vector-toml-LC16" class="blob-code blob-code-inner js-file-line">[<span class="pl-en">transforms</span>.<span class="pl-en">log_parser</span>]</td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L17" class="blob-num js-line-number" data-line-number="17"></td>
+        <td id="file-vector-toml-LC17" class="blob-code blob-code-inner js-file-line">  <span class="pl-smi">type</span>   = <span class="pl-s"><span class="pl-pds">&quot;</span>grok_parser<span class="pl-pds">&quot;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L18" class="blob-num js-line-number" data-line-number="18"></td>
+        <td id="file-vector-toml-LC18" class="blob-code blob-code-inner js-file-line">  <span class="pl-smi">inputs</span> = [<span class="pl-s"><span class="pl-pds">&quot;</span>json_parser<span class="pl-pds">&quot;</span></span>]</td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L19" class="blob-num js-line-number" data-line-number="19"></td>
+        <td id="file-vector-toml-LC19" class="blob-code blob-code-inner js-file-line">  <span class="pl-smi">pattern</span> = <span class="pl-s"><span class="pl-pds">&#39;</span>%{IPORHOST:client} - %{USERNAME:user} \[%{HTTPDATE:timestamp}\] \&quot;%{WORD:verb} %{NOTSPACE:path} HTTP/%{NUMBER}\&quot; %{INT:status} %{NUMBER:bytes} \&quot;%{DATA:referer}\&quot; \&quot;%{DATA:user_agent}\&quot;<span class="pl-pds">&#39;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L20" class="blob-num js-line-number" data-line-number="20"></td>
+        <td id="file-vector-toml-LC20" class="blob-code blob-code-inner js-file-line">  <span class="pl-smi">types.status</span> = <span class="pl-s"><span class="pl-pds">&quot;</span>int<span class="pl-pds">&quot;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L21" class="blob-num js-line-number" data-line-number="21"></td>
+        <td id="file-vector-toml-LC21" class="blob-code blob-code-inner js-file-line">  <span class="pl-smi">types.bytes</span> = <span class="pl-s"><span class="pl-pds">&quot;</span>int<span class="pl-pds">&quot;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L22" class="blob-num js-line-number" data-line-number="22"></td>
+        <td id="file-vector-toml-LC22" class="blob-code blob-code-inner js-file-line">  <span class="pl-smi">types.timestamp</span> = <span class="pl-s"><span class="pl-pds">&quot;</span>timestamp|%d/%b/%Y:%H:%M:%S %z<span class="pl-pds">&quot;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L23" class="blob-num js-line-number" data-line-number="23"></td>
+        <td id="file-vector-toml-LC23" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L24" class="blob-num js-line-number" data-line-number="24"></td>
+        <td id="file-vector-toml-LC24" class="blob-code blob-code-inner js-file-line">[<span class="pl-en">sinks</span>.<span class="pl-en">to_indexer</span>]</td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L25" class="blob-num js-line-number" data-line-number="25"></td>
+        <td id="file-vector-toml-LC25" class="blob-code blob-code-inner js-file-line">  <span class="pl-smi">type</span> = <span class="pl-s"><span class="pl-pds">&quot;</span>elasticsearch<span class="pl-pds">&quot;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L26" class="blob-num js-line-number" data-line-number="26"></td>
+        <td id="file-vector-toml-LC26" class="blob-code blob-code-inner js-file-line">  <span class="pl-smi">inputs</span> = [<span class="pl-s"><span class="pl-pds">&quot;</span>log_parser<span class="pl-pds">&quot;</span></span>]</td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L27" class="blob-num js-line-number" data-line-number="27"></td>
+        <td id="file-vector-toml-LC27" class="blob-code blob-code-inner js-file-line">  <span class="pl-smi">healthcheck</span> = <span class="pl-c1">false</span></td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L28" class="blob-num js-line-number" data-line-number="28"></td>
+        <td id="file-vector-toml-LC28" class="blob-code blob-code-inner js-file-line">  <span class="pl-smi">host</span> = <span class="pl-s"><span class="pl-pds">&quot;</span>http://elasticsearch:9200<span class="pl-pds">&quot;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L29" class="blob-num js-line-number" data-line-number="29"></td>
+        <td id="file-vector-toml-LC29" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L30" class="blob-num js-line-number" data-line-number="30"></td>
+        <td id="file-vector-toml-LC30" class="blob-code blob-code-inner js-file-line">[[<span class="pl-en">tests</span>]]</td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L31" class="blob-num js-line-number" data-line-number="31"></td>
+        <td id="file-vector-toml-LC31" class="blob-code blob-code-inner js-file-line">  <span class="pl-smi">name</span> = <span class="pl-s"><span class="pl-pds">&quot;</span>test_log_parser<span class="pl-pds">&quot;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L32" class="blob-num js-line-number" data-line-number="32"></td>
+        <td id="file-vector-toml-LC32" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L33" class="blob-num js-line-number" data-line-number="33"></td>
+        <td id="file-vector-toml-LC33" class="blob-code blob-code-inner js-file-line">  [[<span class="pl-en">tests</span>.<span class="pl-en">inputs</span>]]</td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L34" class="blob-num js-line-number" data-line-number="34"></td>
+        <td id="file-vector-toml-LC34" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">insert_at</span> = <span class="pl-s"><span class="pl-pds">&quot;</span>json_parser<span class="pl-pds">&quot;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L35" class="blob-num js-line-number" data-line-number="35"></td>
+        <td id="file-vector-toml-LC35" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">type</span> = <span class="pl-s"><span class="pl-pds">&quot;</span>raw<span class="pl-pds">&quot;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L36" class="blob-num js-line-number" data-line-number="36"></td>
+        <td id="file-vector-toml-LC36" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">value</span> = <span class="pl-s"><span class="pl-pds">&#39;</span>172.21.0.1 - - [28/Feb/2020:12:38:46 +0000] &quot;GET /path/to/a HTTP/1.1&quot; 200 46459 &quot;http://localhost/path/to/b&quot; &quot;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36&quot; &quot;-&quot;<span class="pl-pds">&#39;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L37" class="blob-num js-line-number" data-line-number="37"></td>
+        <td id="file-vector-toml-LC37" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L38" class="blob-num js-line-number" data-line-number="38"></td>
+        <td id="file-vector-toml-LC38" class="blob-code blob-code-inner js-file-line">  [[<span class="pl-en">tests</span>.<span class="pl-en">outputs</span>]]</td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L39" class="blob-num js-line-number" data-line-number="39"></td>
+        <td id="file-vector-toml-LC39" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">extract_from</span> = <span class="pl-s"><span class="pl-pds">&quot;</span>log_parser<span class="pl-pds">&quot;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L40" class="blob-num js-line-number" data-line-number="40"></td>
+        <td id="file-vector-toml-LC40" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L41" class="blob-num js-line-number" data-line-number="41"></td>
+        <td id="file-vector-toml-LC41" class="blob-code blob-code-inner js-file-line">    [[<span class="pl-en">tests</span>.<span class="pl-en">outputs</span>.<span class="pl-en">conditions</span>]]</td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L42" class="blob-num js-line-number" data-line-number="42"></td>
+        <td id="file-vector-toml-LC42" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">type</span> = <span class="pl-s"><span class="pl-pds">&quot;</span>check_fields<span class="pl-pds">&quot;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L43" class="blob-num js-line-number" data-line-number="43"></td>
+        <td id="file-vector-toml-LC43" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">&quot;client.equals&quot;</span> = <span class="pl-s"><span class="pl-pds">&quot;</span>172.21.0.1<span class="pl-pds">&quot;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L44" class="blob-num js-line-number" data-line-number="44"></td>
+        <td id="file-vector-toml-LC44" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">&quot;user.equals&quot;</span> = <span class="pl-s"><span class="pl-pds">&quot;</span>-<span class="pl-pds">&quot;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L45" class="blob-num js-line-number" data-line-number="45"></td>
+        <td id="file-vector-toml-LC45" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">&quot;timestamp.equals&quot;</span>= <span class="pl-s"><span class="pl-pds">&quot;</span>2020-02-28T12:38:46Z<span class="pl-pds">&quot;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L46" class="blob-num js-line-number" data-line-number="46"></td>
+        <td id="file-vector-toml-LC46" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">&quot;verb.equals&quot;</span> = <span class="pl-s"><span class="pl-pds">&quot;</span>GET<span class="pl-pds">&quot;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L47" class="blob-num js-line-number" data-line-number="47"></td>
+        <td id="file-vector-toml-LC47" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">&quot;path.equals&quot;</span> = <span class="pl-s"><span class="pl-pds">&quot;</span>/path/to/a<span class="pl-pds">&quot;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L48" class="blob-num js-line-number" data-line-number="48"></td>
+        <td id="file-vector-toml-LC48" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">&quot;status.equals&quot;</span> = <span class="pl-c1">200</span></td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L49" class="blob-num js-line-number" data-line-number="49"></td>
+        <td id="file-vector-toml-LC49" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">&quot;bytes.equals&quot;</span> = <span class="pl-c1">46459</span></td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L50" class="blob-num js-line-number" data-line-number="50"></td>
+        <td id="file-vector-toml-LC50" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">&quot;referer.equals&quot;</span> = <span class="pl-s"><span class="pl-pds">&quot;</span>http://localhost/path/to/b<span class="pl-pds">&quot;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-vector-toml-L51" class="blob-num js-line-number" data-line-number="51"></td>
+        <td id="file-vector-toml-LC51" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">&quot;user_agent.equals&quot;</span> = <span class="pl-s"><span class="pl-pds">&quot;</span>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36<span class="pl-pds">&quot;</span></span></td>
+      </tr>
+</table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/d3rwan/13aba18e159c340b2947992bfbb45f81/raw/c994e66bcae65ee522cd1c8db7db04e51a6b8635/vector.toml" style="float:right">view raw</a>
+        <a href="https://gist.github.com/d3rwan/13aba18e159c340b2947992bfbb45f81#file-vector-toml">vector.toml</a>
+        hosted with &#10084; by <a href="https://github.com">GitHub</a>
+      </div>
+    </div>
+</div></p>
+<p>Fun fact, il est possible de <a href="https://vector.dev/docs/reference/tests/" target="_blank" rel="nofollow noopener noreferrer">tester unitairement la configuration</a> avec Vector, comme on peut le voir dans la section [[tests]] du fichier</p>
+<p>On pourra également noter que chaque step de configuration se base sur au moins un step précédent. </p>
+<p>Côté webapp, on ajoute un agent Vector configuré comme suit:</p>
+<ul>
+<li>Lecture des logs depuis un fichier</li>
+<li>Envoi vers le broker Kafka</li>
+</ul>
+<p><div id="gist102398526" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-agent_vector-toml" class="file">
+    
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-toml ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8" data-paste-markdown-skip>
+      <tr>
+        <td id="file-agent_vector-toml-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-agent_vector-toml-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span> Set global options</span></td>
+      </tr>
+      <tr>
+        <td id="file-agent_vector-toml-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-agent_vector-toml-LC2" class="blob-code blob-code-inner js-file-line"><span class="pl-smi">data_dir</span> = <span class="pl-s"><span class="pl-pds">&quot;</span>/var/lib/vector<span class="pl-pds">&quot;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-agent_vector-toml-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-agent_vector-toml-LC3" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-agent_vector-toml-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-agent_vector-toml-LC4" class="blob-code blob-code-inner js-file-line">[<span class="pl-en">sources</span>.<span class="pl-en">from_file</span>]</td>
+      </tr>
+      <tr>
+        <td id="file-agent_vector-toml-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-agent_vector-toml-LC5" class="blob-code blob-code-inner js-file-line">  <span class="pl-smi">type</span> = <span class="pl-s"><span class="pl-pds">&quot;</span>file<span class="pl-pds">&quot;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-agent_vector-toml-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-agent_vector-toml-LC6" class="blob-code blob-code-inner js-file-line">  <span class="pl-smi">include</span> = [<span class="pl-s"><span class="pl-pds">&quot;</span>/var/log/nginx/*.log<span class="pl-pds">&quot;</span></span>]</td>
+      </tr>
+      <tr>
+        <td id="file-agent_vector-toml-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-agent_vector-toml-LC7" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-agent_vector-toml-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-agent_vector-toml-LC8" class="blob-code blob-code-inner js-file-line">[<span class="pl-en">sinks</span>.<span class="pl-en">to_broker</span>]</td>
+      </tr>
+      <tr>
+        <td id="file-agent_vector-toml-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-agent_vector-toml-LC9" class="blob-code blob-code-inner js-file-line">  <span class="pl-smi">type</span> = <span class="pl-s"><span class="pl-pds">&quot;</span>kafka<span class="pl-pds">&quot;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-agent_vector-toml-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-agent_vector-toml-LC10" class="blob-code blob-code-inner js-file-line">  <span class="pl-smi">inputs</span> = [<span class="pl-s"><span class="pl-pds">&quot;</span>from_file<span class="pl-pds">&quot;</span></span>]</td>
+      </tr>
+      <tr>
+        <td id="file-agent_vector-toml-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-agent_vector-toml-LC11" class="blob-code blob-code-inner js-file-line">  <span class="pl-smi">bootstrap_servers</span> = <span class="pl-s"><span class="pl-pds">&quot;</span>kafka:29092<span class="pl-pds">&quot;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-agent_vector-toml-L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="file-agent_vector-toml-LC12" class="blob-code blob-code-inner js-file-line">  <span class="pl-smi">topic</span> = <span class="pl-s"><span class="pl-pds">&quot;</span>events<span class="pl-pds">&quot;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-agent_vector-toml-L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="file-agent_vector-toml-LC13" class="blob-code blob-code-inner js-file-line">  <span class="pl-smi">encoding</span> = <span class="pl-s"><span class="pl-pds">&quot;</span>json<span class="pl-pds">&quot;</span></span></td>
+      </tr>
+</table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/d3rwan/13aba18e159c340b2947992bfbb45f81/raw/c994e66bcae65ee522cd1c8db7db04e51a6b8635/agent_vector.toml" style="float:right">view raw</a>
+        <a href="https://gist.github.com/d3rwan/13aba18e159c340b2947992bfbb45f81#file-agent_vector-toml">agent_vector.toml</a>
+        hosted with &#10084; by <a href="https://github.com">GitHub</a>
+      </div>
+    </div>
+</div></p>
+<blockquote>
+<p>Le projet de test complet est disponible sur github <a href="https://github.com/d3rwan/discovering_vector" target="_blank" rel="nofollow noopener noreferrer">discovering_vector</a></p>
+</blockquote>
+<p>Il ne me reste qu’à lancer tous mes services</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"> docker-compose build
+ docker-compose up</code></pre></div>
+<p>Puis me rendre sur ma webapp (dans mon cas, <a href="http://localhost:80" target="_blank" rel="nofollow noopener noreferrer">http://localhost:80</a>)
+<img src="/d3rwan-blog/media/elk/joliadmin.png"><em>Exemple d’application web (source: <a href="https://github.com/sbilly/joli-admin" target="_blank" rel="nofollow noopener noreferrer">https://github.com/sbilly/joli-admin</a>)</em></p>
+<p>Après une rapide navigation, je peux me rendre sur mon IHM Kibana (dans mon cas, <a href="http://localhost:5601" target="_blank" rel="nofollow noopener noreferrer">http://localhost:5601</a>), puis dans l’onglet <code class="language-text">Management</code> puis <code class="language-text">Kibana &gt; Index Patterns</code></p>
+<p><img src="/d3rwan-blog/media/vector/add_index_kibana.png"><em>Ajout du pattern d’index vector-*</em></p>
+<p>Et voilà ! Un index <code class="language-text">vector-YYYY.MM.DD</code> a été crée et contient bien mes logs applicatifs.
+A partir de là, je vais pouvoir créer mes indexs, recherches visualisations, dashboards et autre canvas dans Kibana, et pouvoir utiliser ces informations de monitoring.</p>
+<p>Pour conclure, il est effectivement assez facile d’utiliser <a href="https://vector.dev/" target="_blank" rel="nofollow noopener noreferrer">Vector</a> comme remplacant de logtash/beats dans une stack Elastic, et le fait est que ca fonctionne.
+Reste à voir sur la durée si les gains de performance annoncé sont réels, et si le projet arrive durablement à s’imposer dans la communauté.
+En attendant, même très jeune, ce projet est plein de promesses et de bonnes idées (tests unitaires, multi-topologies natives, …), et mérite donc qu’on y jette un oeil!</p></div></div></div><div class="Post-module--post__footer--3WzWU"><div class="Tags-module--tags--1L_ct"><ul class="Tags-module--tags__list--91FqN"><li class="Tags-module--tags__list-item--1M30P"><a class="Tags-module--tags__list-item-link--3SL_8" href="/d3rwan-blog/tag/monitoring/">Monitoring</a></li><li class="Tags-module--tags__list-item--1M30P"><a class="Tags-module--tags__list-item-link--3SL_8" href="/d3rwan-blog/tag/vector/">Vector</a></li><li class="Tags-module--tags__list-item--1M30P"><a class="Tags-module--tags__list-item-link--3SL_8" href="/d3rwan-blog/tag/rust/">Rust</a></li><li class="Tags-module--tags__list-item--1M30P"><a class="Tags-module--tags__list-item-link--3SL_8" href="/d3rwan-blog/tag/logstash/">Logstash</a></li></ul></div><div><p class="Meta-module--meta__date--29eD7">Published on <!-- -->April 14, 2020</p></div></div><div class="Post-module--post__comments--25y6I"></div></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/posts/decouverte-vector";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-6a7feee794e305ff970e.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-0849e6483c9006ac9858.js"],"component---src-templates-not-found-template-js":["/component---src-templates-not-found-template-js-0d45aadac3c5082d3994.js"],"component---src-templates-tags-list-template-js":["/component---src-templates-tags-list-template-js-1ea3b17b8d0cae65adb3.js"],"component---src-templates-categories-list-template-js":["/component---src-templates-categories-list-template-js-37e05ac1e5e79e3b2541.js"],"component---src-templates-languages-list-template-js":["/component---src-templates-languages-list-template-js-382da22c5a5b59dda3ec.js"],"component---src-templates-post-template-js":["/component---src-templates-post-template-js-6279ae0603857b831b13.js"],"component---src-templates-tag-template-js":["/component---src-templates-tag-template-js-1b2e10dc7266e6298e9f.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-65e4ffa33a87c6dad430.js"],"component---src-templates-index-template-js":["/component---src-templates-index-template-js-c690e4afece3736bd449.js"],"component---src-templates-language-template-js":["/component---src-templates-language-template-js-ca215506ddf8420c3bcc.js"]};/*]]>*/</script><script src="/d3rwan-blog/component---src-templates-post-template-js-6279ae0603857b831b13.js" async=""></script><script src="/d3rwan-blog/06a1f2c941cd55aef4842384529632245d8720e1-87f6c214daddf9a7b43d.js" async=""></script><script src="/d3rwan-blog/02829756d7c9841fdd33d32bcc7843fcf4b76a8f-7ee17d93bf5fb2a6c1b6.js" async=""></script><script src="/d3rwan-blog/styles-083a06cb5740baaf347d.js" async=""></script><script src="/d3rwan-blog/app-6a7feee794e305ff970e.js" async=""></script><script src="/d3rwan-blog/framework-88c48abae272a3bc68e7.js" async=""></script><script src="/d3rwan-blog/webpack-runtime-583886ecf6c850bd7d0a.js" async=""></script></body></html>

@@ -3,12 +3,13 @@
 <url> <loc>https://d3rwan.github.io/d3rwan-blog/d3rwan-blog/tags</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://d3rwan.github.io/d3rwan-blog/d3rwan-blog/categories</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://d3rwan.github.io/d3rwan-blog/d3rwan-blog/languages</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://d3rwan.github.io/d3rwan-blog/d3rwan-blog/posts/elk-from-scratch</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://d3rwan.github.io/d3rwan-blog/d3rwan-blog/posts/elk-depuis-zero</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://d3rwan.github.io/d3rwan-blog/d3rwan-blog/posts/hello-new-world</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://d3rwan.github.io/d3rwan-blog/d3rwan-blog/posts/kong</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://d3rwan.github.io/d3rwan-blog/d3rwan-blog/posts/yarn</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://d3rwan.github.io/d3rwan-blog/d3rwan-blog/posts/elk-depuis-zero</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://d3rwan.github.io/d3rwan-blog/d3rwan-blog/posts/elk-from-scratch</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://d3rwan.github.io/d3rwan-blog/d3rwan-blog/posts/devoxx-2018</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://d3rwan.github.io/d3rwan-blog/d3rwan-blog/posts/kong</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://d3rwan.github.io/d3rwan-blog/d3rwan-blog/posts/hello-new-world</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://d3rwan.github.io/d3rwan-blog/d3rwan-blog/posts/decouverte-vector</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://d3rwan.github.io/d3rwan-blog/d3rwan-blog/tag/api-management</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://d3rwan.github.io/d3rwan-blog/d3rwan-blog/tag/architecture</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://d3rwan.github.io/d3rwan-blog/d3rwan-blog/tag/blogging</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -24,11 +25,15 @@
 <url> <loc>https://d3rwan.github.io/d3rwan-blog/d3rwan-blog/tag/monitoring</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://d3rwan.github.io/d3rwan-blog/d3rwan-blog/tag/npm</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://d3rwan.github.io/d3rwan-blog/d3rwan-blog/tag/redis</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://d3rwan.github.io/d3rwan-blog/d3rwan-blog/tag/rust</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://d3rwan.github.io/d3rwan-blog/d3rwan-blog/tag/vector</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://d3rwan.github.io/d3rwan-blog/d3rwan-blog/tag/yarn</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://d3rwan.github.io/d3rwan-blog/d3rwan-blog/category/conference</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://d3rwan.github.io/d3rwan-blog/d3rwan-blog/category/dev</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://d3rwan.github.io/d3rwan-blog/d3rwan-blog/category/dev/page/1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://d3rwan.github.io/d3rwan-blog/d3rwan-blog/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://d3rwan.github.io/d3rwan-blog/d3rwan-blog/page/1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://d3rwan.github.io/d3rwan-blog/d3rwan-blog/language/🇫🇷</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://d3rwan.github.io/d3rwan-blog/d3rwan-blog/language/🇫🇷/page/1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://d3rwan.github.io/d3rwan-blog/d3rwan-blog/language/🇬🇧</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>

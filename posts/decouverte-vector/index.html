@@ -65,7 +65,7 @@ On notera que la documentation semble plutôt bien faite, et que les composants 
 Et comme on peut convenir que Logstash n’est pas le meilleur produit du monde, espérons que Vector trouve sa place dans les prochains mois dans la communauté.
 Et en plus, ca tombe bien, Vector propose nativement des modules équivalents à ceux de Logstash, ce qui fait que la migration ne sera pas compliquée !     </p>
 <h2 id="après-tout-on-a-le-temps-non--confinement" style="position:relative;"><a href="#apr%C3%A8s-tout-on-a-le-temps-non--confinement" aria-label="après tout on a le temps non  confinement permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Après-tout, on a le temps non ? #Confinement</h2>
-<p><a href="https://vector.dev/" target="_blank" rel="nofollow noopener noreferrer">Vector</a> se défini comme un routeur de données d’observabilité haute-performance, qui permet la collecte, la transformation et l’envoi d’évênements (logs et/ou métriques).</p>
+<p><a href="https://vector.dev/" target="_blank" rel="nofollow noopener noreferrer">Vector</a> se défini comme un routeur de données d’observabilité haute-performance, qui permet la collecte, la transformation et l’envoi d’événements (logs et/ou métriques).</p>
 <h3 id="fonctionnement-conceptuel" style="position:relative;"><a href="#fonctionnement-conceptuel" aria-label="fonctionnement conceptuel permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Fonctionnement conceptuel</h3>
 <p><img src="/d3rwan-blog/media/vector/concept.png"></p>
 <p>Il s’agit basiquement d’un ETL qui s’appuie sur les notions suivantes:</p>
@@ -461,8 +461,8 @@ Cette topologie est la plus scalable et durable, mais aussi la plus complexe à 
 </div></p>
 <p>Le service central Vector est configuré comme suit:</p>
 <ul>
-<li>Lecture des évênements depuis le broker Kafka</li>
-<li>Parsing du JSON de l’évênement envoyé depuis l’agent Vector</li>
+<li>Lecture des événements depuis le broker Kafka</li>
+<li>Parsing du JSON de l’événement envoyé depuis l’agent Vector</li>
 <li>Parsing Grok (format Logstash) de la ligne de log brute</li>
 <li>Indexation vers Elasticsearch</li>
 </ul>

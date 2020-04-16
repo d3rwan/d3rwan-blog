@@ -24,7 +24,7 @@ Et en plus, ca tombe bien, Vector propose nativement des modules équivalents à
 
 ## Après-tout, on a le temps non ? #Confinement
 
-[Vector](https://vector.dev/) se défini comme un routeur de données d'observabilité haute-performance, qui permet la collecte, la transformation et l'envoi d'évênements (logs et/ou métriques).
+[Vector](https://vector.dev/) se défini comme un routeur de données d'observabilité haute-performance, qui permet la collecte, la transformation et l'envoi d'événements (logs et/ou métriques).
 
 ### Fonctionnement conceptuel
 ![](/d3rwan-blog/media/vector/concept.png)
@@ -119,8 +119,8 @@ L’ensemble des services et des interactions sont décrites dans un fichier doc
 `gist:d3rwan/13aba18e159c340b2947992bfbb45f81#docker-compose.yml`
 
 Le service central Vector est configuré comme suit:
-- Lecture des évênements depuis le broker Kafka
-- Parsing du JSON de l'évênement envoyé depuis l'agent Vector
+- Lecture des événements depuis le broker Kafka
+- Parsing du JSON de l'événement envoyé depuis l'agent Vector
 - Parsing Grok (format Logstash) de la ligne de log brute
 - Indexation vers Elasticsearch
 
@@ -154,7 +154,7 @@ Après une rapide navigation, je peux me rendre sur mon IHM Kibana (dans mon cas
 ![](/d3rwan-blog/media/vector/add_index_kibana.png)_Ajout du pattern d'index vector-\*_
 
 Et voilà ! Un index `vector-YYYY.MM.DD` a été crée et contient bien mes logs applicatifs. 
-A partir de là, je vais pouvoir créer mes indexs, recherches visualisations, dashboards et autre canvas dans Kibana, et pouvoir utiliser ces informations de monitoring.
+A partir de là, je vais pouvoir créer mes recherches, visualisations, dashboards et autre canvas dans Kibana, et pouvoir utiliser ces informations de monitoring.
 
 Pour conclure, il est effectivement assez facile d'utiliser [Vector](https://vector.dev/) comme remplacant de logtash/beats dans une stack Elastic, et le fait est que ca fonctionne.
 Reste à voir sur la durée si les gains de performance annoncé sont réels, et si le projet arrive durablement à s'imposer dans la communauté. 

@@ -39,11 +39,13 @@ const createPages = async ({ graphql, actions }) => {
     {
       allMarkdownRemark(
         filter: { frontmatter: { draft: { ne: true } } }
+        sort: { order: DESC, fields: [frontmatter___date] }
       ) {
         edges {
           node {
             frontmatter {
               template
+              title
             }
             fields {
               slug
@@ -56,7 +58,7 @@ const createPages = async ({ graphql, actions }) => {
 
   const { edges } = result.data.allMarkdownRemark;
 
-  _.each(edges, (edge) => {
+  _.each(edges, (edge, idx) => {
     if (_.get(edge, 'node.frontmatter.template') === 'page') {
       createPage({
         path: edge.node.fields.slug,
@@ -64,10 +66,16 @@ const createPages = async ({ graphql, actions }) => {
         context: { slug: edge.node.fields.slug }
       });
     } else if (_.get(edge, 'node.frontmatter.template') === 'post') {
+      const prev = idx === edges.length - 1 ? null : edges[idx + 1];
+      const next = idx === 0 ? null : edges[idx - 1];
       createPage({
         path: edge.node.fields.slug,
         component: path.resolve('./src/templates/post-template.js'),
-        context: { slug: edge.node.fields.slug }
+        context: {
+          slug: edge.node.fields.slug,
+          prev,
+          next
+        }
       });
     }
   });

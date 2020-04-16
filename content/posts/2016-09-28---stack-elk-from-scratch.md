@@ -45,7 +45,7 @@ But also :
 
 * **C** as *Curator*, a tool to manage our index
 
-* **B **as *Beats*, client-side agent to send the logs/metrics to our stack
+* **B** as *Beats*, client-side agent to send the logs/metrics to our stack
 
 ![The complete architecture](/d3rwan-blog/media/elk/stack-elk.jpeg)*The complete architecture*
 
@@ -101,9 +101,9 @@ After startup, you should be able to access the web app (port 80).
 
 ![Example web app capture (source: [https://github.com/sbilly/joli-admin](https://github.com/sbilly/joli-admin))](/d3rwan-blog/media/elk/joliadmin.png)*Example web app capture (source: [https://github.com/sbilly/joli-admin](https://github.com/sbilly/joli-admin))*
 
-After few minutes browsing, returning to Kibana. An index (*logstash-**) is now available.
+After few minutes browsing, returning to Kibana. An index logstash-* is now available.
 
-![Kibana: Index pattern configuration screen (here, logstash-* index is available)](/d3rwan-blog/media/elk/configure-pattern.png)*Kibana: Index pattern configuration screen (here, logstash-* index is available)*
+![Kibana: Index pattern configuration screen (here, logstash-* index is available)](/d3rwan-blog/media/elk/configure-pattern.png)_Kibana: Index pattern configuration screen (here, logstash-* index is available)_
 
 After creating index, we can now exploring our web app logs (Discover tab), create visualizations (Visualize tab) and dashboards (Dashboard tab).
 
